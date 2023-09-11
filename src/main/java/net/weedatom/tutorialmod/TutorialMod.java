@@ -1,4 +1,4 @@
-package net.weedatom.startermod;
+package net.weedatom.tutorialmod;
 
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.api.distmarker.Dist;
@@ -14,14 +14,14 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod(StarterMod.MOD_ID)
-public class StarterMod
+@Mod(TutorialMod.MOD_ID)
+public class TutorialMod
 {
     // Define mod id in a common place for everything to reference
-    public static final String MOD_ID = "starter-mod";
+    public static final String MOD_ID = "tutorialmod";
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
-    public StarterMod() {
+    public TutorialMod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         // Register the commonSetup method for modloading
